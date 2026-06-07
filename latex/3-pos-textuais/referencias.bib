@@ -1,0 +1,483 @@
+% Revisão sistemática definitiva que mapeia a literatura, evidenciando a ausência de consenso nos conceitos e a baixa concordância humana na anotação de dados.
+@article{fortuna2018, 
+	author    = {Fortuna, Paula and Nunes, Sérgio},
+	title     = {A Survey on Automatic Detection of Hate Speech in Text},
+	journal   = {ACM Computing Surveys},
+	volume    = {51},
+	number    = {4},
+	articleno = {85},
+	pages     = {1--30},
+	year      = {2018},
+	month     = {July},
+	publisher = {ACM},
+	doi       = {10.1145/3232676},
+	url       = {https://dl.acm.org/doi/10.1145/3232676}
+}
+
+% Apresenta uma suíte de LLMs guardrails (baseada no Gemma2) com taxonomia de seis categorias de dano e detalha um pipeline inovador de geração de dados sintéticos e mitigação de viés para treinamento de moderação.
+@article{zeng2024shieldgemma,
+	author    = {Zeng, Wenjun and Liu, Yuchi and Mullins, Ryan and 
+	Peran, Ludovic and Fernandez, Joe and Harkous, Hamza and 
+	Narasimhan, Karthik and Proud, Drew and Kumar, Piyush and 
+	Radharapu, Bhaktipriya and Sturman, Olivia and Wahltinez, Oscar},
+	title     = {{ShieldGemma}: Generative {AI} Content Moderation Based on {Gemma}},
+	journal   = {arXiv preprint arXiv:2407.21772},
+	year      = {2024},
+	url       = {https://arxiv.org/abs/2407.21772}
+}
+
+%
+@misc{ghosh2025ailuminate,
+	title         = {{AILuminate}: Introducing v1.0 of the {AI} Risk and 
+	Reliability Benchmark from {MLCommons}},
+	author        = {Ghosh, Shaona and Frase, Heather and Williams, Adina 
+	and others},
+	year          = {2025},
+	eprint        = {2503.05731},
+	archivePrefix = {arXiv},
+	primaryClass  = {cs.CY},
+	url           = {https://arxiv.org/abs/2503.05731}
+}
+
+% Análise prática de seis bases de dados comprovando que a falta de padronização conceitual torna os datasets incompatíveis e afeta o desempenho da classificação.
+@inproceedings{fortuna-etal-2020-toxic,
+	author    = {Fortuna, Paula and Soler, Juan and Wanner, Leo},
+	title     = {Toxic, Hateful, Offensive or Abusive? {W}hat Are We Really Classifying? {A}n Empirical Analysis of Hate Speech Datasets},
+	booktitle = {Proceedings of the Twelfth Language Resources and Evaluation Conference},
+	pages     = {6786--6794},
+	year      = {2020},
+	publisher = {European Language Resources Association},
+	url       = {https://aclanthology.org/2020.lrec-1.838/}
+}
+
+% Apresenta um LLM classificador de guardrail (Llama2-7b) com taxonomia própria, capaz de avaliar prompts e respostas separadamente e adaptável a novas políticas de segurança via prompting.
+@article{inan2023llamaguard,
+	author    = {Inan, Hakan and Upasani, Kartikeya and Chi, Jianfeng and
+	Rungta, Rashi and Iyer, Krithika and Mao, Yuning and
+	Tontchev, Michael and Hu, Qing and Fuller, Brian and
+	Testuggine, Davide and Khabsa, Madian},
+	title     = {Llama Guard: {LLM}-based Input-Output Safeguard for Human-{AI} Conversations},
+	journal   = {arXiv preprint arXiv:2312.06674},
+	year      = {2023},
+	url       = {https://arxiv.org/abs/2312.06674}
+}
+
+% Desenvolve uma taxonomia abrangente de riscos éticos e sociais em LLMs, mapeando 21 riscos (observados e antecipados) em seis macroáreas estruturais.
+@inproceedings{weidinger2022taxonomy,
+	author    = {Weidinger, Laura and Uesato, Jonathan and Rauh, Maribeth 
+	and Griffin, Conor and Huang, Po-Sen and Mellor, John 
+	and Glaese, Amelia and Cheng, Myra and Balle, Borja 
+	and Kasirzadeh, Atoosa and others},
+	title     = {Taxonomy of Risks posed by Language Models},
+	booktitle = {Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency},
+	pages     = {214--229},
+	year      = {2022},
+	publisher = {Association for Computing Machinery},
+	doi       = {10.1145/3531146.3533088},
+	url       = {https://doi.org/10.1145/3531146.3533088}
+}
+
+% Argumenta que os sistemas de processamento de linguagem natural falham ao focar apenas no conteúdo da informação e ignorar as dinâmicas sociais. Propõe uma taxonomia de sete fatores socioculturais (incluindo contexto, normas sociais e cultura), comprovando que a aceitabilidade, a intenção e o nível de ofensa de uma interação variam drasticamente dependendo das normas e ideologias de cada cultura local.
+@inproceedings{hovy-yang-2021-importance,
+	author    = {Hovy, Dirk and Yang, Diyi},
+	title     = {The Importance of Modeling Social Factors of Language: Theory and Practice},
+	booktitle = {Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+	pages     = {588--602},
+	year      = {2021},
+	publisher = {Association for Computational Linguistics},
+	doi       = {10.18653/v1/2021.naacl-main.49},
+	url       = {https://aclanthology.org/2021.naacl-main.49/}
+}
+
+% Introduz uma taxonomia e um benchmark focados em discurso de ódio implícito, caracterizado por linguagem codificada e indireta que carece de marcadores lexicais óbvios. Demonstra que grupos extremistas usam sarcasmo e metáforas para propagar ataques mantendo negação plausível, burlando classificadores neurais.
+@inproceedings{elsherief2021latent,
+	author    = {ElSherief, Mai and Ziems, Caleb and Muchlinski, David 
+	and Anupindi, Vaishnavi and Seybolt, Jordyn and 
+	De Choudhury, Munmun and Yang, Diyi},
+	title     = {Latent Hatred: A Benchmark for Understanding Implicit Hate Speech},
+	booktitle = {Proceedings of the 2021 Conference on Empirical Methods 
+	in Natural Language Processing},
+	pages     = {345--363},
+	year      = {2021},
+	publisher = {Association for Computational Linguistics},
+	url       = {https://aclanthology.org/2021.emnlp-main.29}
+}
+
+@techreport{cnj615,
+	author      = {{Conselho Nacional de Justiça}},
+	title       = {Resolução n\textordmasculine{} 615, de 22 de março de 2025},
+	institution = {Conselho Nacional de Justiça},
+	year        = {2025},
+	url         = {https://atos.cnj.jus.br/files/original1555302025031467d4517244566.pdf},
+	urldate     = {2026-06-05}
+}
+
+@online{trt4galileu2026,
+	author  = {{Tribunal Regional do Trabalho da 4\textordfeminine{} Região}},
+	title   = {Galileu: Sistema identifica tentativa de manipulação em petição e alerta magistrado},
+	year    = {2026},
+	url     = {https://www.trt4.jus.br/portais/trt4/modulos/noticias/50981781},
+	urldate = {2026-06-05}
+}
+
+@misc{kumar2025freelunchguardrails,
+	title={No Free Lunch with Guardrails}, 
+	author={Divyanshu Kumar and Nitin Aravind Birur and Tanay Baswa and Sahil Agarwal and Prashanth Harshangi},
+	year={2025},
+	eprint={2504.00441},
+	archivePrefix={arXiv},
+	primaryClass={cs.CR},
+	url={https://arxiv.org/abs/2504.00441}, 
+}
+
+@misc{metallamaguard3,
+	author       = {{Llama Team, AI @ Meta}},
+	title        = {The Llama 3 Family of Models},
+	howpublished = {\url{https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Guard3/1B/MODEL_CARD.md}},
+	year         = {2024}
+}
+
+@inproceedings{padhi2025granite,
+	author    = {Padhi, Inkit and Nagireddy, Manish and Cornacchia, Giandomenico and others},
+	title     = {Granite Guardian: Comprehensive {LLM} Safeguarding},
+	booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas
+	Chapter of the Association for Computational Linguistics:
+	Human Language Technologies (Industry Track)},
+	pages     = {607--615},
+	year      = {2025},
+	publisher = {Association for Computational Linguistics},
+	doi       = {10.18653/v1/2025.naacl-industry.49},
+	url       = {https://aclanthology.org/2025.naacl-industry.49/}
+}
+
+% TODO: era in proceedings
+@misc{lin2024awq,
+	author    = {Lin, Ji and Tang, Jiaming and Tang, Haotian and Yang, Shang and 
+	Dang, Wei and Gan, Chuang and Song, Han and Tay, Yi and 
+	Yang, Hongxia and Han, Song},
+	title     = {{AWQ}: Activation-aware Weight Quantization for {LLM} Compression and Acceleration},
+	booktitle = {Proceedings of Machine Learning and Systems},
+	year      = {2024},
+	url       = {https://arxiv.org/abs/2306.00978}
+}
+
+@inproceedings{frantar2023gptq,
+	author    = {Frantar, Elias and Ashkboos, Saleh and Hoefler, Torsten and Alistarh, Dan},
+	title     = {{GPTQ}: Accurate Post-Training Quantization for Generative Pre-trained Transformers},
+	booktitle = {The Eleventh International Conference on Learning Representations},
+	year      = {2023},
+	url       = {https://arxiv.org/abs/2210.17323}
+}
+
+@misc{kharinaev2025quantization,
+	author        = {Kharinaev, Artyom and Moskvoretskii, Viktor and Shvetsov, Egor
+	and Studenikina, Kseniia and Mikhail, Bykov and Burnaev, Evgeny},
+	title         = {Investigating the Impact of Quantization Methods on the Safety
+	and Reliability of Large Language Models},
+	year          = {2025},
+	eprint        = {2502.15799},
+	archivePrefix = {arXiv},
+	primaryClass  = {cs.CR},
+	url           = {https://arxiv.org/abs/2502.15799}
+}
+
+@book{wohlin2012experimentation,
+	author    = {Wohlin, Claes and Runeson, Per and H{\"o}st, Martin and 
+	Ohlsson, Magnus C. and Regnell, Bj{\"o}rn and 
+	Wessl{\'e}n, Anders},
+	title     = {Experimentation in Software Engineering},
+	publisher = {Springer},
+	year      = {2012}
+}
+
+@inbook{basili1994gqm,
+	author    = {Basili, Victor R. and Caldiera, Gianluigi and Rombach, Hans Dieter},
+	title     = {The {Goal Question Metric} Approach},
+	booktitle = {Encyclopedia of Software Engineering},
+	publisher = {John Wiley \& Sons},
+	year      = {1994},
+	volume    = {I},
+	pages     = {528--532}
+}
+
+@inproceedings{tamiosso2026evaluating,
+	author    = {Tamiosso, Gustavo Lopes and Nunes, Rafael Oleques and Balreira, Dennis Giovani},
+	title     = {Evaluating Small Language Models for {E}nglish-to-{P}ortuguese Translation:
+	Impact of Model Scale and Quantization},
+	booktitle = {Proceedings of the 17th International Conference on Computational
+	Processing of {P}ortuguese ({PROPOR} 2026) - Vol. 1},
+	pages     = {943--952},
+	year      = {2026},
+	publisher = {Association for Computational Linguistics},
+	url       = {https://aclanthology.org/2026.propor-1.94/}
+}
+
+@inproceedings{silva2026lost,
+	author    = {Silva, Guilherme and Silva, Pedro and Peixoto, Matheus and
+	Moreira, Gladston and Luz, Eduardo},
+	title     = {Lost in Quantization: Activation Outliers Explain Language-Specific
+	{FP}8 Sensitivity in {L}lama-3},
+	booktitle = {Proceedings of the 17th International Conference on Computational
+	Processing of {P}ortuguese ({PROPOR} 2026) - Vol. 1},
+	pages     = {1044--1048},
+	year      = {2026},
+	publisher = {Association for Computational Linguistics},
+	url       = {https://aclanthology.org/2026.propor-1.108/}
+}
+
+@inproceedings{wulczyn2017exmachina,
+	author    = {Wulczyn, Ellery and Thain, Nithum and Dixon, Lucas},
+	title     = {Ex Machina: Personal Attacks Seen at Scale},
+	booktitle = {Proceedings of the 26th International Conference on World Wide Web},
+	pages     = {1391--1399},
+	year      = {2017},
+	doi       = {10.1145/3038912.3052591}
+}
+
+% Apresenta um sistema de moderação que supera a classificação binária ao prever 5 níveis de severidade para 11 categorias de conteúdo prejudicial. Propõe um framework de geração de dados sintéticos para treinar moderadores a compreenderem gradações de risco. O modelo resultante supera o estado da arte, provando que avaliar a severidade melhora significativamente a precisão da detecção de danos.
+@inproceedings{yin2025bingoguard,
+	author    = {Yin, Fan and Laban, Philippe and Peng, Xiangyu and 
+	Zhou, Yilun and Mao, Yixin and Vats, Vaibhav and 
+	Ross, Linnea and Agarwal, Divyansh and 
+	Xiong, Caiming and Wu, Chien-Sheng},
+	title     = {BingoGuard: {LLM} Content Moderation Tools with Risk Levels},
+	booktitle = {International Conference on Learning Representations},
+	pages     = {48184--48216},
+	year      = {2025},
+	url       = {https://proceedings.iclr.cc/paper_files/paper/2025/file/782b6152c04e9948c2cb3833e9a288ef-Paper-Conference.pdf}
+}
+
+@inproceedings{mikolov2013efficient,
+	author    = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+	title     = {Efficient Estimation of Word Representations in Vector Space},
+	booktitle = {Proceedings of the Workshop at the International Conference on Learning Representations},
+	year      = {2013},
+	url       = {https://arxiv.org/abs/1301.3781}
+}
+
+@inproceedings{petrov2023tokenizers,
+	author    = {Petrov, Aleksandar and La Malfa, Emanuele and 
+	Torr, Philip H.S. and Bibi, Adel},
+	title     = {Language Model Tokenizers Introduce Unfairness Between Languages},
+	booktitle = {Proceedings of the 37th International Conference on 
+	Neural Information Processing Systems},
+	year      = {2023},
+	publisher = {Curran Associates Inc.}
+}
+
+@misc{yong2024lowresource,
+	author        = {Yong, Zheng-Xin and Menghini, Cristina and Bach, Stephen H.},
+	title         = {Low-Resource Languages Jailbreak {GPT}-4},
+	year          = {2024},
+	eprint        = {2310.02446},
+	archivePrefix = {arXiv},
+	primaryClass  = {cs.CL},
+	url           = {https://arxiv.org/abs/2310.02446}
+}
+
+@inproceedings{deng2024multilingual,
+	author        = {Deng, Yue and Zhang, Wenxuan and Pan, Sinno Jialin and Bing, Lidong},
+	title         = {Multilingual Jailbreak Challenges in Large Language Models},
+	booktitle     = {The Twelfth International Conference on Learning Representations},
+	year          = {2024},
+	url           = {https://arxiv.org/abs/2310.06474}
+}
+@article{trajano2024olid,
+	title={OLID-BR: offensive language identification dataset for Brazilian Portuguese},
+	author={Trajano, Douglas and Bordini, Rafael H and Vieira, Renata},
+	journal={Language Resources and Evaluation},
+	volume={58},
+	number={4},
+	pages={1263--1289},
+	year={2024},
+	publisher={Springer}
+}
+
+@misc{yang2024benchmarking,
+	title={Benchmarking LLM Guardrails in Handling Multilingual Toxicity}, 
+	author={Yahan Yang and Soham Dan and Dan Roth and Insup Lee},
+	year={2024},
+	eprint={2410.22153},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL},
+	url={https://arxiv.org/abs/2410.22153}, 
+}
+
+@techreport{datareportal2026global,
+	author      = {Kemp, Simon},
+	title       = {Digital 2026: Global Overview Report},
+	institution = {DataReportal},
+	year        = {2026},
+	month       = {February},
+	type        = {Report},
+	url         = {https://datareportal.com/reports/digital-2026-global-overview-report},
+	urldate     = {2026-06-06}
+}
+
+@inproceedings{sousa-etal-2026-curupira,
+	title = "{CURUPIRA}: Clever guard for harm and linguistic prompt mitigation in {B}razilian {P}ortuguese",
+	author = "Sousa, Rog{\'e}rio  and
+	Cruz-Casta{\~n}eda, William Alberto  and
+	Silva, Jos{\'e} Roberto Homeli  and
+	Amadeus, Marcellus",
+	editor = "Souza, Marlo  and
+	de-Dios-Flores, Iria  and
+	Santos, Diana  and
+	Freitas, Larissa  and
+	Souza, Jackson Wilke da Cruz  and
+	Ribeiro, Eug{\'e}nio",
+	booktitle = "Proceedings of the 17th International Conference on Computational Processing of {P}ortuguese ({PROPOR} 2026) - Vol. 1",
+	month = apr,
+	year = "2026",
+	address = "Salvador, Brazil",
+	publisher = "Association for Computational Linguistics",
+	url = "https://aclanthology.org/2026.propor-1.107/",
+	pages = "1038--1043",
+	ISBN = "979-8-89176-387-6",
+}
+
+@inproceedings{devlin-etal-2019-bert,
+	title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+	author = "Devlin, Jacob  and
+	Chang, Ming-Wei  and
+	Lee, Kenton  and
+	Toutanova, Kristina",
+	editor = "Burstein, Jill  and
+	Doran, Christy  and
+	Solorio, Thamar",
+	booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+	month = jun,
+	year = "2019",
+	address = "Minneapolis, Minnesota",
+	publisher = "Association for Computational Linguistics",
+	url = "https://aclanthology.org/N19-1423/",
+	doi = "10.18653/v1/N19-1423",
+	pages = "4171--4186",
+}
+
+@inproceedings{wei2023jailbroken,
+	author    = {Wei, Alexander and Haghtalab, Nika and Steinhardt, Jacob},
+	title     = {Jailbroken: How Does {LLM} Safety Training Fail?},
+	booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+	year      = {2023},
+	publisher = {Curran Associates Inc.}
+}
+
+@inproceedings{padhi2025granite,
+	author    = {Padhi, Inkit and Nagireddy, Manish and Cornacchia, Giandomenico
+	and others},
+	title     = {Granite Guardian: Comprehensive {LLM} Safeguarding},
+	booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas
+	Chapter of the Association for Computational Linguistics:
+	Human Language Technologies (Industry Track)},
+	pages     = {607--615},
+	year      = {2025},
+	publisher = {Association for Computational Linguistics},
+	doi       = {10.18653/v1/2025.naacl-industry.49},
+	url       = {https://aclanthology.org/2025.naacl-industry.49/}
+}
+
+@inproceedings{joshi2025cultureguard,
+	author    = {Joshi, Raviraj Bhuminand and Paul, Rakesh and Singla, Kanishk and others},
+	title     = {{CultureGuard}: Towards Culturally-Aware Dataset and Guard Model
+	for Multilingual Safety Applications},
+	booktitle = {Proceedings of the 14th International Joint Conference on Natural
+	Language Processing and the 4th Conference of the Asia-Pacific
+	Chapter of the Association for Computational Linguistics},
+	pages     = {2666--2685},
+	year      = {2025},
+	publisher = {The Asian Federation of Natural Language Processing and
+	The Association for Computational Linguistics},
+	doi       = {10.18653/v1/2025.ijcnlp-long.144},
+	url       = {https://aclanthology.org/2025.ijcnlp-long.144/}
+}
+
+
+@article{mozafari2020bert,
+	author    = {Mozafari, Marzieh and Farahbakhsh, Reza and Crespi, Noël},
+	title     = {Hate speech detection and racial bias mitigation in social media based on {BERT} model},
+	journal   = {PLOS ONE},
+	volume    = {15},
+	number    = {8},
+	pages     = {e0237861},
+	year      = {2020},
+	doi       = {10.1371/journal.pone.0237861},
+	url       = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0237861}
+}
+
+@inproceedings{vaswani2017attention,
+	author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, \L{}ukasz and Polosukhin, Illia},
+	title = {Attention is all you need},
+	year = {2017},
+	isbn = {9781510860964},
+	publisher = {Curran Associates Inc.},
+	address = {Red Hook, NY, USA},
+	booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+	pages = {6000–6010},
+	numpages = {11},
+	location = {Long Beach, California, USA},
+	series = {NIPS'17}
+}
+
+@misc{llamaguard3hf,
+	author       = {{Meta AI}},
+	title        = {Llama Guard 3 8B},
+	year         = {2024},
+	howpublished = {\url{https://huggingface.co/meta-llama/Llama-Guard-3-8B}},
+	note         = {Acesso em: maio 2025}
+}
+
+@article{zhao2023survey,
+	author    = {Zhao, Wayne Xin and others},
+	title     = {A Survey of Large Language Models},
+	journal   = {arXiv preprint arXiv:2303.18223},
+	year      = {2023},
+	url       = {https://arxiv.org/abs/2303.18223}
+}
+
+%% Não validado
+@article{weidinger2021,
+  title={Ethical and social risks of harm from Language Models},
+  author={Weidinger, Laura and Mellor, John and Rauh, Martina and Griffin, Conor and Uesato, Jonathan and Huang, Po-Sen and Cheng, Myra and Glaese, Mia and Balle, Borja and Kasirzadeh, Atoosa and others},
+  journal={arXiv preprint arXiv:2112.04359},
+  year={2021}
+}
+
+@article{rebedea2023,
+  title={NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications},
+  author={Rebedea, Traian and Dinu, Razvan and Sreedhar, Makesh Narsimhan and Parisien, Christopher and Cohen, Jonathan},
+  journal={arXiv preprint arXiv:2310.10501},
+  year={2023}
+}
+
+@article{inan2023,
+  title={Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations},
+  author={Inan, Hakan and Upasani, Kartikeya and Chi, Jianfeng and Rungta, Rashi and Iyer, Krithika and Mao, Yuning and Tassi, Michael and Chaudhary, Thierry and Goyal, Naman and others},
+  journal={arXiv preprint arXiv:2312.06674},
+  year={2023}
+}
+
+@article{han2024,
+  title={WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs},
+  author={Han, Seungju and others},
+  journal={arXiv preprint arXiv:2406.11039},
+  year={2024}
+}
+
+@inproceedings{leite2020,
+  title={Toxic Language Detection in Social Media for Brazilian Portuguese: New Dataset and Multilingual Analysis},
+  author={Leite, Jo{\~a}o A and Silva, Diego F and Bontcheva, Kalina and Scarton, Carolina},
+  booktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},
+  pages={914--924},
+  year={2020}
+}
+
+@mastersthesis{oliveira2024,
+	author  = {Oliveira, Amanda da Silva},
+	title   = {Detecção de discurso de ódio em língua portuguesa: uma análise do impacto da qualidade e diversidade de dados no desempenho de grandes modelos de linguagem},
+	school  = {Universidade Federal de Ouro Preto},
+	address = {Ouro Preto},
+	year    = {2024},
+	type    = {Dissertação (Mestrado em Ciência da Computação)},
+	pages   = {95}
+}
