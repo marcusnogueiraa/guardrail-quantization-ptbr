@@ -1,0 +1,52 @@
+\chapter{Trabalhos Relacionados}
+\label{cap:trabalhos-relacionados}
+
+Os trabalhos relacionados identificados neste estudo abordam a segurança de sistemas baseados em LLMs sob três dimensões: a eficácia de \textit{guardrails} em cenários multilíngues, a vulnerabilidade introduzida por técnicas de compressão como a quantização e o desempenho desses mecanismos em idiomas específicos como o português brasileiro. Embora cada um desses trabalhos avance em pelo menos uma dessas dimensões, nenhum deles as cruza de forma sistemática, o que configura a lacuna central que este trabalho se propõe a preencher.
+
+\section{Quantização e Segurança Multilíngue em LLMs}
+\label{sec:jaesik}
+
+\citeonline{jaesik2025} conduz uma análise sistemática do impacto da quantização na segurança do modelo Llama3-8B-Instruct, avaliando 23 configurações de quantização no formato GGUF em dois idiomas, inglês e coreano, por meio de 100 cenários de comportamento prejudicial do \textit{dataset} JBB-Behaviors. Os resultados revelam uma correlação negativa entre o nível de compressão e a robustez de segurança: quantizações mais agressivas estão associadas à degradação da capacidade de raciocínio do modelo e ao aumento da taxa de sucesso de ataques (\textit{Attack Success Rate}, ASR). De forma central para este trabalho, o autor identifica evidências de viés linguístico na robustez de segurança do modelo avaliado: quando testado em coreano, o ASR aumenta em 25,5 pontos percentuais em comparação ao inglês, sugerindo que a quantização pode amplificar o \textit{gap} de segurança entre idiomas. A semelhança com este trabalho reside precisamente nessa interseção entre quantização e \textit{gap} multilíngue de segurança. A diferença central é que \citeonline{jaesik2025} avalia um LLM de propósito geral sob ataques adversariais utilizando o formato GGUF, enquanto este trabalho avalia \textit{guardrails} especializados em classificação de conteúdo prejudicial com os métodos GPTQ e AWQ, adota o português brasileiro como idioma alvo e utiliza F1 como métrica principal em vez de ASR.
+
+
+\section{Guardrails em Cenários Multilíngues}
+\label{sec:yang}
+
+\citeonline{yang2024benchmarking} conduzem um estudo abrangente sobre a eficácia de \textit{guardrails} em cenários multilíngues, avaliando quatro modelos, Llama Guard 3, Llama Guard 2, Aegis-Defensive e MD-Judge, em mais de 10 idiomas por meio de sete \textit{datasets} públicos. Os resultados mostram que os \textit{guardrails} avaliados ainda apresentam capacidade insuficiente para lidar com toxicidade multilíngue, com quedas expressivas de F1 em idiomas distintos do inglês, especialmente nos de menor recurso. Este trabalho compartilha com \citeonline{yang2024benchmarking} o protocolo de classificação de entrada e o uso de métricas de F1 para comparação entre idiomas. A diferença central é que \citeonline{yang2024benchmarking} não avaliam o efeito da quantização sobre esse \textit{gap} multilíngue e não incluem o português brasileiro entre os idiomas avaliados, duas lacunas que este trabalho endereça diretamente.
+
+
+\section{Moderação de Conteúdo em Português Brasileiro}
+\label{sec:curupira}
+
+\citeonline{sousa-etal-2026-curupira} apresentam o Curupira, um \textit{guardrail} desenvolvido especificamente para o português brasileiro. O modelo é criado por meio de \textit{fine-tuning} supervisionado sobre um corpus sintético de segurança em português e avaliado em comparação com duas arquiteturas abertas de \textit{guardrails}: ShieldGemma e Qwen3Guard. O trabalho demonstra que o ajuste fino direcionado produz melhorias consistentes de F1 na classificação de segurança em prompts em português, reforçando a existência de uma lacuna de cobertura desse idioma em sistemas de moderação. A semelhança com este trabalho está no contexto compartilhado de avaliação de \textit{guardrails} em português brasileiro e no uso de F1 macro como métrica principal. A diferença é que \citeonline{sousa-etal-2026-curupira} criam um modelo novo e o avaliam em \textit{benchmarks} públicos de português brasileiro, além de verificar a degradação \textit{cross-lingual} em inglês após o \textit{fine-tuning} em PT-BR, enquanto este trabalho avalia modelos existentes sob diferentes níveis de quantização, comparando diretamente o desempenho em inglês e em português brasileiro sobre o mesmo conjunto de prompts.
+
+
+\section{Análise Comparativa}
+\label{sec:analise-comparativa}
+
+O Quadro~\ref{qua:relacionados} sintetiza as principais características dos trabalhos relacionados em comparação com este trabalho.
+\begin{quadro}[h!]
+	\centering
+	\Caption{\label{qua:relacionados} Comparação entre os trabalhos relacionados e este trabalho}
+	\UFCqua{}{
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			\textbf{Característica} & \textbf{\citeonline{jaesik2025}} & \textbf{\citeonline{yang2024benchmarking}} & \textbf{\citeonline{sousa-etal-2026-curupira}} & \textbf{Este trabalho} \\
+			\hline
+			Modelos avaliados & 1 LLM & 4 \textit{guardrails} & 3 \textit{guardrails} & 5 \textit{guardrails} \\
+			\hline
+			Quantização & GGUF & Não avaliada & Não avaliada & GPTQ e AWQ \\
+			\hline
+			Idiomas & EN e KO & Mais de 10 & PT-BR & EN e PT-BR \\
+			\hline
+			Modo & Ataque adversarial & Class. entrada & Class. entrada & Class. entrada \\
+			\hline
+			Dataset & JBB-Behaviors & 7 \textit{datasets} públicos & \textit{Benchmarks} PT-BR & BeaverTails (adaptado) \\
+			\hline
+		\end{tabular}
+	}{
+		\Fonte{Elaborado pelo autor.}
+	}
+\end{quadro}
+
+A análise comparativa evidencia que, embora os trabalhos relacionados avancem individualmente em dimensões relevantes, nenhum deles cruza quantização, desempenho multilíngue e cobertura do português brasileiro simultaneamente. A partir da revisão conduzida, não foram identificados estudos que avaliassem sistematicamente como a quantização afeta o \textit{gap} de desempenho EN vs PT-BR em \textit{guardrails} baseados em LLMs, utilizando o mesmo conjunto de prompts nos dois idiomas e controlando o método de quantização.

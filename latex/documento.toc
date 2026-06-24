@@ -2,35 +2,53 @@
 \babel@toc {brazil}{}\relax 
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{13}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objetivos}{12}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{12}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{12}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Organização do Documento}{13}{section.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Conteúdo Prejudicial}{16}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Moderação de Conteúdo e Guardrails}{17}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Guardrails e Desafios Multilíngues}{21}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Principais Guardrails Baseados em LLM}{23}{subsection.2.2.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Conteúdo Prejudicial}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Moderação de Conteúdo e Guardrails}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Evolução da Moderação Automatizada}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Guardrails Baseados em LLMs}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Guardrails e Desafios Multilíngues}{20}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Principais Guardrails Baseados em LLM}{21}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Llama Guard 3}{21}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Qwen3Guard}{22}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}ShieldGemma}{23}{subsubsection.2.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.2.4.4}Granite Guardian}{23}{subsubsection.2.2.4.4}%
 \contentsline {section}{\numberline {2.3}Quantização de Modelos de Linguagem}{24}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Fundamentos e Métodos de Quantização}{24}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Impacto da Quantização em Segurança e Multilinguismo}{26}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}GPTQ: Quantização Pós-Treinamento Baseada em Segunda Ordem}{26}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}AWQ: Quantização Pós-Treinamento Baseada em Ativações}{27}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Impacto da Quantização em Segurança e Multilinguismo}{28}{subsection.2.3.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{28}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Escopo do Experimento}{28}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Design Experimental}{28}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Fatores e Tratamentos}{28}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Variáveis Dependentes}{29}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Hipóteses}{30}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Dataset}{30}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Modelos}{30}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Quantização}{30}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Protocolo de Inferência}{30}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Ambiente de Execução}{30}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Experimento Piloto}{30}{subsection.3.7.2}%
-\contentsline {section}{\numberline {3.8}Métricas e Procedimentos de Análise}{30}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Ameaças à Validade}{30}{section.3.9}%
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{31}{section*.19}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Trabalhos Relacionados}}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Quantização e Segurança Multilíngue em LLMs}{30}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Guardrails em Cenários Multilíngues}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Moderação de Conteúdo em Português Brasileiro}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Análise Comparativa}{31}{section.3.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Metodologia}}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Escopo do Experimento}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Design Experimental}{33}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Fatores e Tratamentos}{33}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Variáveis Dependentes}{34}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Objetos}{35}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Sujeitos}{35}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Hipóteses}{35}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Dataset}{36}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Modelos}{38}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Quantização}{39}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Protocolo de Inferência}{40}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Ambiente de Execução}{41}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Experimento Piloto}{41}{subsection.4.7.2}%
+\contentsline {section}{\numberline {4.8}Métricas e Procedimentos de Análise}{43}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Ameaças à Validade}{44}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Validade Interna}{44}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Validade Externa}{45}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.9.3}Validade de Construto}{45}{subsection.4.9.3}%
+\contentsline {section}{\numberline {4.10}Cronograma}{46}{section.4.10}%

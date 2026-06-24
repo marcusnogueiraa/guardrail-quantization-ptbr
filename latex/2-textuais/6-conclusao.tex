@@ -1,0 +1,14 @@
+\chapter{Conclusão}
+\label{cap:conclusao}
+
+Este trabalho investiga se a quantização pós-treinamento amplifica o \textit{gap} de desempenho entre inglês e português brasileiro em \textit{guardrails} baseados em LLM, uma questão com implicações diretas para a implantação segura de sistemas de inteligência artificial em infraestruturas locais que atendem usuários brasileiros. A motivação parte de uma lacuna identificada na literatura: embora estudos recentes demonstrem que \textit{guardrails} existentes apresentam desempenho inferior em idiomas não-ingleses \cite{yang2024benchmarking}, e que a quantização pode degradar o alinhamento de segurança de modelos de linguagem \cite{jaesik2025}, nenhum trabalho havia investigado sistematicamente a interseção dessas duas dimensões para o português brasileiro.
+
+Até o presente momento, o trabalho concluiu as etapas fundamentais de preparação e execução do experimento de \textit{baseline}. O pipeline de dados foi integralmente construído: extraíram-se 16.188 prompts únicos do BeaverTails, reclassificados nas 14 categorias originais por meio do GPT-5 nano no nível do prompt, e traduzidos para o português brasileiro via API do Google Translate. O ambiente de inferência foi configurado com o servidor vLLM em infraestrutura de nuvem GPU, e os cinco \textit{guardrails} selecionados — Llama Guard 3 8B, Llama Guard 3 1B, ShieldGemma 9B, Nemotron Safety 8B e Granite Guardian 4.1 8B — foram avaliados em precisão original FP16 sobre o dataset completo em inglês e português brasileiro, constituindo o \textit{baseline} experimental sobre o qual os efeitos da quantização serão mensurados no TCC 2.
+
+As principais limitações do trabalho em seu estágio atual residem na ausência dos experimentos de quantização, que compõem o núcleo da pergunta de pesquisa. Sem os resultados das configurações GPTQ 8bit e 4bit, não é possível ainda avaliar as hipóteses $H_1^1$ e $H_1^3$, que dependem da comparação entre níveis de quantização. Adicionalmente, o gabarito baseado em LLM introduz vieses de classificação documentados nas ameaças à validade, e a tradução automática pode não capturar integralmente as nuances semânticas do conteúdo prejudicial em português brasileiro.
+
+Para o TCC 2, estão planejadas as seguintes etapas: quantização dos cinco modelos em GPTQ 8bit e 4bit com dataset de calibração multilíngue mC4, execução do experimento completo nas 30 configurações experimentais, análise estatística com testes de McNemar e intervalos de confiança por \textit{bootstrap}, análise exploratória da degradação por categoria de conteúdo prejudicial, e redação dos capítulos de resultados e discussão. Os modelos quantizados serão disponibilizados publicamente no HuggingFace Hub para reprodutibilidade do experimento.
+
+
+
+
